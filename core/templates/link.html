@@ -4,7 +4,7 @@
 	<div class="form-group">
 		  <label class="col-md-3 control-label">URL encurtada:</label>
 		  <div class="col-md-9">
-		    <a href="https://google.com">www.google.com</a>
+		    <a href="{{ link.get_absolute_url }}"> localhost:8000/a/{{link}}</a>
 		  </div>
 	</div>
 {% endblock %}
