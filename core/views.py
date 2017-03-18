@@ -33,12 +33,6 @@ def index (request):
 	
 	return render (request, 'index.html', context)
 
-def link (request, slug):
-	link = Link.objects.get(slug=slug)
-	context = {
-		'link' : link,
-	}
-	return render(request, 'link.html', context)
 
 def url(request, slug):
 	link = Link.objects.get (slug=slug)
