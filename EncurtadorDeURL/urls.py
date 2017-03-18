@@ -20,7 +20,6 @@ from core import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
-    url(r'link/', views.link, name='link'),
-	url(r'^a/(?P<slug>[\w]+)$', views.url, name='url'),
+	url(r'^(?P<slug>[\w]+)$', views.url, name='url'),
     url(r'^admin/', admin.site.urls),
 ]
